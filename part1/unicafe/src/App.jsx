@@ -1,17 +1,7 @@
 import { useState } from "react";
 import Header from "./component/Header";
-import Button from "./component/Button";
 import Statistics from "./component/Statistics";
-
-const Buttons = (props) => {
-  return (
-    <>
-      <Button text="good" handleAction={props.updateGoodState} />
-      <Button text="neutral" handleAction={props.updateNeutralState} />
-      <Button text="bad" handleAction={props.updateBadState} />
-    </>
-  );
-};
+import Buttons from "./component/Buttons";
 
 const App = () => {
   // save clicks of each button to its own state
